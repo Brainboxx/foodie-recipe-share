@@ -1,0 +1,354 @@
+/* index.css */
+.navbar {
+  background-color: #2ECC71; /* Green background color */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 2rem; /* Increase the font size */
+  text-transform: uppercase; /* Uppercase the text */
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem; 
+}
+
+/* Style the links when hovered */
+.links a:hover {
+  color: #27AE60; 
+}
+
+/* Style Registeration form */
+.register-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.register-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.register-form button {
+  background-color: #2ecc71; /* Green button */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-form p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-form a {
+  color: #2ecc71; /* Green link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-form button:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Login form styles */
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-form button {
+  background-color: #2ecc71; /* Green button */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+.login-form p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-form a {
+  color: #2ecc71; /* Green link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+/* Recipe share form style */
+.recipe-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.recipe-form input[type="text"],
+.recipe-form input[type="file"] {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.recipe-form button {
+  background-color: #2ecc71; /* Green button */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recipe-form button:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+.recipe-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.recipe-items {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+}
+
+.recipe-item {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Reversed the order to have buttons on the right */
+  gap: 20px;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  align-items: center;
+}
+
+.recipe-items button,
+.recipe-item .delete-button {
+  background-color: #12a44f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recipe-item .delete-button {
+  background-color: #f44336;
+  padding: 5px 10px;
+}
+
+/* Optional: Add some margin between the buttons */
+.recipe-items button + button,
+.recipe-item .delete-button + button {
+  margin-left: 10px;
+}
+
+.recipe-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.recipe-details {
+  max-width: 500px;
+}
+
+.recipe-link {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.recipe-link:hover {
+  color: #ff6347; /* Change to your preferred hover color */
+}
+/* RecipeDetail.css */
+.recipe-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-detail h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.recipe-detail img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.recipe-detail p {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Overall styling for the Recipe Update */
+.recipe-update-form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styling for form labels */
+.recipe-update-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Styling for form inputs */
+.recipe-update-form input,
+.recipe-update-form textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the file input */
+.recipe-update-form .image-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.recipe-update-form .image-input-container input {
+  flex: 1;
+}
+
+/* Styling for the prefilled image container */
+.recipe-update-form .prefilled-image-container {
+  margin-right: 10px;
+}
+
+.recipe-update-form .prefilled-image-container img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Styling for the submit button */
+.recipe-update-form button {
+  background-color: #12a44f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Error message styling */
+.recipe-update-form .error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Search bar styling */
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  margin-bottom: 20px;
+}
