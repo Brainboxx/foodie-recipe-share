@@ -10,10 +10,10 @@ Welcome to the Recipe Sharing Web Application repository! This project is built 
 
 ## Technologies Used
 
-- **Backend**: Django Rest Framework, PostgreSQL (or your preferred database), Django ORM.
+- **Backend**: Django Rest Framework, Django ORM.
 - **Frontend**: React.js, Axios for API requests.
 - **Authentication**: JWT (JSON Web Tokens) for secure authentication.
-- **Styling**: CSS Modules, Bootstrap (optional).
+- **Styling**: CSS Modules.
 
 ## Setup Instructions
 
